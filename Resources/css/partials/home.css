@@ -1,5 +1,9 @@
 /* Variables */
 /* Mixins */
+.title, .paragraph {
+  display: block;
+  text-align: center; }
+
 .header {
   overflow: hidden;
   background-position: center;
@@ -12,5 +16,19 @@
   width: 100%;
   position: relative;
   background-attachment: fixed; }
+
+.about {
+  width: 90%;
+  margin: 0 auto;
+  display: blocK;
+  border: 2px solid blue; }
+
+.title {
+  text-transform: uppercase;
+  margin: 20px auto; }
+
+.paragraph {
+  margin: 40px auto;
+  font-size: 18px; }
 
 /*# sourceMappingURL=home.css.map */

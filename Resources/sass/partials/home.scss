@@ -6,3 +6,32 @@
     @include background();
     background-attachment: fixed;
 }
+
+.about{
+    width: 90%;
+    margin: 0 auto;
+    display: blocK;
+    border: 2px solid blue;
+}
+
+.title{
+    text-transform: uppercase;
+    margin: 20px auto;
+}
+
+.title, .paragraph{
+    @extend %text-centered;
+}
+
+.paragraph{
+    margin: 40px auto;
+    font-size: 18px;
+}
+
+
+// .col-xs-12{
+//     border: 2px solid blue;
+//     width: 80% !important;
+//     margin: 0 auto !important;
+//     display: block;
+// }
