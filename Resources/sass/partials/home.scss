@@ -8,7 +8,6 @@ body{
 .header{
     // background: url(../../img/cover.jpg);
     @include background();
-    background-attachment: fixed;
 }
 
 // .about{
@@ -22,7 +21,6 @@ body{
 .contentContainer{
      background: $darkBlue;
      width: 100%;
-     margin-top: 20px;
 }
 
 .title{
@@ -39,9 +37,13 @@ body{
     font-size: 18px;
 }
 
+.pause{
+    @include background();
+    height: 45vh;
+}
 
 .featuresRow{
-    margin-top: 40px;
+    margin-top: 70px;
 }
 
 .featuresImg{
@@ -49,13 +51,34 @@ body{
     width: 100%;
 }
 
+.featuresDiv{
+    @include flex();
+    height: 250px;
+}
+
 .featuresParagraph{
     color: #FFF;
+    font-size: 16px;
 }
 
 .multiplayerImg{
     height: 150px !important;
     width: 100%;
+    position: relative;
+    cursor: pointer;
+    opacity: 0.65;
+    &:hover{
+        border-bottom: 5px solid #FFF;
+        opacity: 1;
+    }
+}
+
+.imgText{
+    color: #FFF;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0%;
+    left: 10%;
 }
 
 // .col-xs-12{
