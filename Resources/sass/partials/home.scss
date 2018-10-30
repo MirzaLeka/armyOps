@@ -1,0 +1,8 @@
+
+@import "main.scss";
+
+.header{
+    // background: url(../../img/cover.jpg);
+    @include background();
+    background-attachment: fixed;
+}

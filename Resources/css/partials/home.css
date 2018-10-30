@@ -1,0 +1,16 @@
+/* Variables */
+/* Mixins */
+.header {
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-attachment: fixed; }
+
+/*# sourceMappingURL=home.css.map */

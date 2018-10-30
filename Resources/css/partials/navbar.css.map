@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,eAAe;AAIf,YAAY",
+"sources": ["../../sass/partials/main.scss"],
+"names": [],
+"file": "navbar.css"
+}

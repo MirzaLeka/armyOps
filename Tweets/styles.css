@@ -1,0 +1,73 @@
+
+html, body{
+    overflow-x: hidden;
+}
+
+body{
+    width: 100%;
+  }
+  
+  div{
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: blue;
+    height: 600px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  
+
+/*  NOT USEFUL
+
+.timeline-Body {
+    position: relative;
+    background: blue !important;
+    border-top: 1px solid rgba(15,70,100,.12);
+    border-bottom: 1px solid rgba(15,70,100,.12);
+}  */
+
+ /* .timeline-Viewport{
+  display: none;
+} */
+
+  /* .timeline-TweetList{
+      float: left;
+  } */
+
+
+               
+
+ .twitter-timeline {
+    max-width: 100%;
+    max-height: 1000px;
+  }
+  /* .fa {
+    font-size: 25px;
+    color: #FFFFFF;
+  }
+  .panel-title {
+   font-size: 25px; 
+   color: #FFFFFF;
+   font-family: 'Open Sans', sans-serif;
+  }
+  .panel-heading {
+   background-color: #1da1f2 !important;;
+   color: #1da1f2 !important;;
+  }
+  .panel {
+   margin-top: 25px;
+  } */
+
+  /*
+  Twitter tools
+  https://developer.twitter.com/en/docs/twitter-for-websites/timelines/overview.html
+
+  timline embeded github example
+  https://github.com/solodev/twitter-timeline-embed
+  
+  netlify CMS
+  https://www.netlifycms.org/?fbclid=IwAR1xpB16jX8XqA40OR-aejUM3Q07kSRJsjSaoauNjdVQOtOQH5FIy0WeDIo
+  
+  */
