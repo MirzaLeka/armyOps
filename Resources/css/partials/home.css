@@ -4,6 +4,9 @@
   display: block;
   text-align: center; }
 
+body {
+  overflow-x: hidden; }
+
 .header {
   overflow: hidden;
   background-position: center;
@@ -17,11 +20,10 @@
   position: relative;
   background-attachment: fixed; }
 
-.about {
-  width: 90%;
-  margin: 0 auto;
-  display: blocK;
-  border: 2px solid blue; }
+.contentContainer {
+  background: #1d252d;
+  width: 100%;
+  margin-top: 20px; }
 
 .title {
   text-transform: uppercase;
@@ -30,5 +32,19 @@
 .paragraph {
   margin: 40px auto;
   font-size: 18px; }
+
+.featuresRow {
+  margin-top: 40px; }
+
+.featuresImg {
+  height: 250px !important;
+  width: 100%; }
+
+.featuresParagraph {
+  color: #FFF; }
+
+.multiplayerImg {
+  height: 150px !important;
+  width: 100%; }
 
 /*# sourceMappingURL=home.css.map */

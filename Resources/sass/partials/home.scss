@@ -1,17 +1,28 @@
 
 @import "main.scss";
 
+body{
+    overflow-x: hidden;
+}
+
 .header{
     // background: url(../../img/cover.jpg);
     @include background();
     background-attachment: fixed;
 }
 
-.about{
-    width: 90%;
-    margin: 0 auto;
-    display: blocK;
-    border: 2px solid blue;
+// .about{
+//     width: 90%;
+//     margin: 0 auto;
+//     display: blocK;
+//     border: 2px solid blue;
+// }
+
+
+.contentContainer{
+     background: $darkBlue;
+     width: 100%;
+     margin-top: 20px;
 }
 
 .title{
@@ -28,6 +39,24 @@
     font-size: 18px;
 }
 
+
+.featuresRow{
+    margin-top: 40px;
+}
+
+.featuresImg{
+    height: 250px !important;
+    width: 100%;
+}
+
+.featuresParagraph{
+    color: #FFF;
+}
+
+.multiplayerImg{
+    height: 150px !important;
+    width: 100%;
+}
 
 // .col-xs-12{
 //     border: 2px solid blue;
