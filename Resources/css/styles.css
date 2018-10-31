@@ -94,7 +94,9 @@ body {
   z-index: 1;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 5px; }
+  grid-gap: 5px;
+  background: #1d252d;
+  border-bottom: 5px solid #1d252d; }
 
 .mediaItems {
   margin: 0;
@@ -127,7 +129,7 @@ body {
 /* Modal Content */
 .modal-content {
   width: 50%;
-  height: 65%;
+  height: 66%;
   padding: none;
   margin: none;
   background: transparent;
@@ -176,10 +178,71 @@ body {
   .closeModal:hover {
     color: gray; }
 
+/* Modal Animation */
+.modal-content, .modalCaption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s; }
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0); }
+  to {
+    -webkit-transform: scale(1); } }
+@keyframes zoom {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
 /* Variables */
 /* Mixins */
 .title, .paragraph {
   display: block;
   text-align: center; }
+
+.twitter-timeline {
+  max-width: 800px !important; }
+
+.fa {
+  font-size: 25px;
+  color: #FFFFFF; }
+
+.panel-title {
+  font-size: 25px;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif; }
+
+.panel-heading {
+  background-color: #1da1f2 !important;
+  color: #1da1f2 !important; }
+
+.panel {
+  margin-top: 25px; }
+
+  /*
+  Twitter tools
+  https://developer.twitter.com/en/docs/twitter-for-websites/timelines/overview.html
+
+  timline embeded github example
+  https://github.com/solodev/twitter-timeline-embed
+  
+  netlify CMS
+  https://www.netlifycms.org/?fbclid=IwAR1xpB16jX8XqA40OR-aejUM3Q07kSRJsjSaoauNjdVQOtOQH5FIy0WeDIo
+  
+  */
+/* Twitter API - October 31st */
+  /*
+
+https://www.youtube.com/watch?v=WrZqF7qqvJ0 ***
+
+https://developer.twitter.com/en/docs/twitter-for-websites/javascript-api/guides/set-up-twitter-for-websites ***
+
+https://apps.twitter.com ***
+
+https://developer.twitter.com/en/docs/tweets/timelines/api-reference/get-statuses-user_timeline.html
+
+
+  */
 
 /*# sourceMappingURL=styles.css.map */

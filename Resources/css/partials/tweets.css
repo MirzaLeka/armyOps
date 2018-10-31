@@ -1,0 +1,45 @@
+.twitter-timeline {
+  max-width: 800px !important; }
+
+.fa {
+  font-size: 25px;
+  color: #FFFFFF; }
+
+.panel-title {
+  font-size: 25px;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif; }
+
+.panel-heading {
+  background-color: #1da1f2 !important;
+  color: #1da1f2 !important; }
+
+.panel {
+  margin-top: 25px; }
+
+  /*
+  Twitter tools
+  https://developer.twitter.com/en/docs/twitter-for-websites/timelines/overview.html
+
+  timline embeded github example
+  https://github.com/solodev/twitter-timeline-embed
+  
+  netlify CMS
+  https://www.netlifycms.org/?fbclid=IwAR1xpB16jX8XqA40OR-aejUM3Q07kSRJsjSaoauNjdVQOtOQH5FIy0WeDIo
+  
+  */
+/* Twitter API - October 31st */
+  /*
+
+https://www.youtube.com/watch?v=WrZqF7qqvJ0 ***
+
+https://developer.twitter.com/en/docs/twitter-for-websites/javascript-api/guides/set-up-twitter-for-websites ***
+
+https://apps.twitter.com ***
+
+https://developer.twitter.com/en/docs/tweets/timelines/api-reference/get-statuses-user_timeline.html
+
+
+  */
+
+/*# sourceMappingURL=tweets.css.map */

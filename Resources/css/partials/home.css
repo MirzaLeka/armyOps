@@ -94,7 +94,9 @@ body {
   z-index: 1;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 5px; }
+  grid-gap: 5px;
+  background: #1d252d;
+  border-bottom: 5px solid #1d252d; }
 
 .mediaItems {
   margin: 0;
@@ -127,7 +129,7 @@ body {
 /* Modal Content */
 .modal-content {
   width: 50%;
-  height: 65%;
+  height: 66%;
   padding: none;
   margin: none;
   background: transparent;
@@ -175,5 +177,23 @@ body {
   padding: none; }
   .closeModal:hover {
     color: gray; }
+
+/* Modal Animation */
+.modal-content, .modalCaption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s; }
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0); }
+  to {
+    -webkit-transform: scale(1); } }
+@keyframes zoom {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
 
 /*# sourceMappingURL=home.css.map */
