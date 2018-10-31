@@ -19,6 +19,9 @@ body {
   width: 100%;
   position: relative; }
 
+.pauseAndFeatures {
+  position: relative; }
+
 .pause {
   overflow: hidden;
   background-position: center;
@@ -34,12 +37,11 @@ body {
   z-index: 0;
   position: relative; }
 
-.contentContainer {
-  top: 150%;
-  position: absolute;
+.featuresContainer {
+  position: relative;
   background: linear-gradient(to top, #1d252d 0%, #1d252d 75%, rgba(29, 37, 45, 0.5) 90%, rgba(29, 37, 45, 0) 100%);
   width: 100%;
-  z-index: 2; }
+  z-index: 1; }
 
 .title {
   text-transform: uppercase;
@@ -86,5 +88,24 @@ body {
   position: absolute;
   bottom: 0%;
   left: 10%; }
+
+.media {
+  position: relative;
+  z-index: 1; }
+
+.mediaItems {
+  margin: 0;
+  float: left;
+  height: 200px;
+  width: 20%;
+  border: 2px solid #FFF;
+  border-bottom: none;
+  border-right: none; }
+
+.mediaItems:nth-child(even) {
+  background: red; }
+
+.mediaItems:nth-child(odd) {
+  background: blue; }
 
 /*# sourceMappingURL=home.css.map */

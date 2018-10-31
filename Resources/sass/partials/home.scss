@@ -17,16 +17,21 @@ body{
 //     border: 2px solid blue;
 // }
 
+.pauseAndFeatures{
+    position: relative;
+}
+
 .pause{
     @include background();
     height: 65vh;
     z-index: 0;
+    // top: 0%;
     position: relative;
 }
 
-.contentContainer{
-    top: 150%;
-    position: absolute;
+.featuresContainer{
+    // top: 15%;
+    position: relative;
     //  background: $darkBlue;
     background: linear-gradient(
         to top, 
@@ -36,7 +41,7 @@ body{
         rgba(29,37,45,0) 100%
      );
      width: 100%;
-     z-index: 2;
+     z-index: 1;
 }
 
 .title{
@@ -94,9 +99,32 @@ body{
     left: 10%;
 }
 
-// .col-xs-12{
-//     border: 2px solid blue;
-//     width: 80% !important;
-//     margin: 0 auto !important;
-//     display: block;
-// }
+
+.media{
+    position: relative;
+    z-index: 1;
+}
+
+.mediaItems{
+    margin: 0;
+    float: left;
+    height: 200px;
+    width: 20%;
+    border: 2px solid #FFF;
+    border-bottom: none;
+    border-right: none;
+}
+
+.mediaItems:nth-child(n+6) {
+// border-right: 2px solid #FFF;
+}
+
+.mediaItems:nth-child(even){
+    background: red;
+}
+
+
+.mediaItems:nth-child(odd){
+    background: blue;
+}
+
