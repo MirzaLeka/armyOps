@@ -103,28 +103,26 @@ body{
 .media{
     position: relative;
     z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
 }
 
 .mediaItems{
     margin: 0;
-    float: left;
     height: 200px;
-    width: 20%;
-    border: 2px solid #FFF;
+    width: 100%;
     border-bottom: none;
     border-right: none;
+    cursor: pointer;
+    opacity: 0.85;
+    &:hover{
+        opacity: 1;
+    }
+
 }
 
-.mediaItems:nth-child(n+6) {
-// border-right: 2px solid #FFF;
+.footer{
+    height: 200px;
+    background: $darkBlue;
 }
-
-.mediaItems:nth-child(even){
-    background: red;
-}
-
-
-.mediaItems:nth-child(odd){
-    background: blue;
-}
-
