@@ -37,8 +37,6 @@ for (let i = 0; i < items.length; i++) {
 
 $(".media").append(item);
 
-// ADD ATTRIBUTE ONCLICK = openModal(i)
-
 
 // for (let i = 0; i < items.length; i++) {
 //     let mediaItem = document.createElement("img"); 

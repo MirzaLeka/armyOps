@@ -1,6 +1,9 @@
 /* Variables */
 /* Mixins */
-.title, .paragraph {
+li {
+  list-style-type: none; }
+
+.title, .paragraph, .getInTouchUl {
   display: block;
   text-align: center; }
 
@@ -111,7 +114,26 @@ body {
 
 .footer {
   height: 200px;
-  background: #1d252d; }
+  background: #1d252d;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center; }
+
+.getInTouchUl {
+  width: 300px;
+  margin: 0 auto;
+  padding: 0; }
+
+.getInTouchList {
+  color: #FFF;
+  opacity: 0.85;
+  cursor: pointer;
+  float: left;
+  margin-left: 40px; }
+  .getInTouchList:hover {
+    opacity: 1; }
 
 .modal {
   display: none;

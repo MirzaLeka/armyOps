@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,eAAe;AAIf,YAAY",
+"mappings": "AAAA,eAAe;AAIf,YAAY;AA+BZ,EAAE;EACE,eAAe,EAAE,IAAI",
 "sources": ["../../sass/partials/main.scss"],
 "names": [],
 "file": "navbar.css"

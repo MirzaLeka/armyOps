@@ -43,7 +43,7 @@ body{
     margin: 20px auto;
 }
 
-.title, .paragraph{
+.title, .paragraph, .getInTouchUl{
     @extend %text-centered;
 }
 
@@ -118,9 +118,30 @@ body{
 
 }
 
+
+// footer
+
 .footer{
     height: 200px;
     background: $darkBlue;
+    @include flex();
+}
+
+.getInTouchUl{
+    width: 300px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.getInTouchList{
+    color: #FFF;
+    opacity: 0.85;
+    cursor: pointer;
+    float: left;
+    margin-left: 40px;
+    &:hover{
+        opacity: 1;
+    }
 }
 
 
