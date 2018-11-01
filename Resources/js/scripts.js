@@ -5,7 +5,7 @@ getMedia();
 
 }
 
-let items = [
+const items = [
     "../Resources/img/media/1.png",
     "../Resources/img/media/2.jpg",
     "../Resources/img/media/3.png",

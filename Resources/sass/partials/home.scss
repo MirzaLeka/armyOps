@@ -6,10 +6,20 @@ body{
 }
 
 .header{
-    // background: url(../../img/cover.jpg);
     @include background();
+    @include flex();
 }
 
+// .header h1{
+//     color: #FFF;
+//     margin: 0 auto;
+//     font-size: 98px;
+// }
+
+
+h1, .title, .paragraph, .getInTouchUl{
+    @extend %text-centered;
+}
 
 .pauseAndFeatures{
     position: relative;
@@ -18,15 +28,11 @@ body{
 .pause{
     @include background();
     height: 65vh;
-    z-index: 0;
-    // top: 0%;
-    position: relative;
+    position: absolute;
 }
 
 .featuresContainer{
-    // top: 15%;
     position: relative;
-    //  background: $darkBlue;
     background: linear-gradient(
         to top, 
         rgba(29,37,45,1) 0%,
@@ -35,7 +41,6 @@ body{
         rgba(29,37,45,0) 100%
      );
      width: 100%;
-     z-index: 1;
 }
 
 .title{
@@ -43,9 +48,6 @@ body{
     margin: 20px auto;
 }
 
-.title, .paragraph, .getInTouchUl{
-    @extend %text-centered;
-}
 
 .paragraph{
     margin: 40px auto;
@@ -96,7 +98,6 @@ body{
 
 .media{
     position: relative;
-    z-index: 1;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 5px;
