@@ -27,13 +27,8 @@ let items = [
 
 function getMedia() {
 
-let item = '';
-
-for (let i = 0; i < items.length; i++) {
-    item += `<img class="mediaItems" onclick="openModal(${i})" src="${items[i]}"/>`;
-}
-
-$(".media").append(item); 
+const images = items.map((item, i) => `<img src="${item}" onclick="openModal(${i})" class='mediaItems'/>`).join('');
+document.querySelector('.media').innerHTML = images;
 
 }
 
@@ -86,11 +81,6 @@ function prevImg() {
         modal.style.display = "none";
         });
   });
-
-
-//   $(".closeModal").click(function() {
-//     $("#myModal").fadeOut();
-//   });
 
   // Close modal when you click anywhere on window
 

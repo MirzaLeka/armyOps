@@ -130,8 +130,20 @@ body{
 
 // footer
 
+.imgWrapper{
+    height: 40vh;
+    width: 100%;
+    // @include flex();
+    position: relative;
+}
+
 .footer{
-    height: 200px;
+    position: absolute;
+    bottom: 0%;
+    z-index: 1;
+    opacity: .8;
+    height: 120px;
+    width: 100%;
     background: $darkBlue;
     @include flex();
 }

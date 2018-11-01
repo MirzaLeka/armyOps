@@ -117,8 +117,18 @@ body {
   overflow-y: auto;
   overflow-x: hidden; }
 
+.imgWrapper {
+  height: 40vh;
+  width: 100%;
+  position: relative; }
+
 .footer {
-  height: 200px;
+  position: absolute;
+  bottom: 0%;
+  z-index: 1;
+  opacity: .8;
+  height: 120px;
+  width: 100%;
   background: #1d252d;
   display: flex;
   justify-content: center;
