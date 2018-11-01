@@ -119,6 +119,15 @@ body{
 }
 
 
+// tweets
+
+.embededPosts{
+    height: 75vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
 // footer
 
 .footer{
@@ -230,7 +239,7 @@ body{
 
   
   /* Modal Animation */
-.modal-content, .modalCaption {    
+.modal-content {    
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;

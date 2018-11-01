@@ -112,6 +112,11 @@ body {
   .mediaItems:hover {
     opacity: 1; }
 
+.embededPosts {
+  height: 75vh;
+  overflow-y: auto;
+  overflow-x: hidden; }
+
 .footer {
   height: 200px;
   background: #1d252d;
@@ -201,7 +206,7 @@ body {
     color: gray; }
 
 /* Modal Animation */
-.modal-content, .modalCaption {
+.modal-content {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;

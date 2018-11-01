@@ -27,34 +27,16 @@ let items = [
 
 function getMedia() {
 
-// let media = document.querySelector(".media");
-
 let item = '';
 
 for (let i = 0; i < items.length; i++) {
     item += `<img class="mediaItems" onclick="openModal(${i})" src="${items[i]}"/>`;
 }
 
-$(".media").append(item);
-
-
-// for (let i = 0; i < items.length; i++) {
-//     let mediaItem = document.createElement("img"); 
-//     mediaItem.addEventListener("click", openModal(i));
-//     mediaItem.setAttribute("src", items[i]);
-//     mediaItem.classList = "mediaItems";
-//     media.appendChild(mediaItem);
-// }
-
-// for (let i of items) {
-// let mediaItem = document.createElement("img");
-// console.log(i);
-// mediaItem.setAttribute("src", items[0]);
-// mediaItem.classList = "mediaItems";
-// media.appendChild(mediaItem);
-//     }
+$(".media").append(item); 
 
 }
+
 
 
 let globalSrc = 0;
