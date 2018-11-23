@@ -10,6 +10,11 @@ $darkBlue: #1d252d;
     box-shadow:         $top $down $left $right $color;  
    }
 
+@mixin shadowAround($top, $down, $left, $right, $color){
+-webkit-box-shadow: $top $down $left $right $color;  
+-moz-box-shadow:    $top $down $left $right $color;  
+box-shadow:         $top $down $left $right $color; 
+   }
 
 @mixin flex() {
     display: flex;
