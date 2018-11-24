@@ -166,17 +166,36 @@ h1, .title, .paragraph{
 .footer{
     width: 100%;
     background: $darkBlue;
+    height: 20vh;
 }
 
-.footerTop{
-    height: 10vh;
+// .footerTop{
+//     height: 10vh;
+//     background: yellow;
+// }
+
+// .footerMiddle{
+//     width: 480px;
+//     margin: 0 auto;
+//     display: block;
+//     text-align: center;
+//     background: blue;
+// }
+
+.footerLeft{
+    width: 50%;
+    float: left;
+    height: 20vh;
+    border-right: 2px solid darken($darkBlue, 5%);
+    @include flex();
+    
 }
 
-.footerMiddle{
-    width: 480px;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
+.footerRight{
+    width: 50%;
+    float: right;
+    height: 20vh;
+    @include flex();
 }
 
 .getInTouchUl{
@@ -189,9 +208,9 @@ h1, .title, .paragraph{
 
 .buyNow{
     float: right;
-    width: 150px;
-    padding: 0;
-    padding-top: 3vh;
+    // width: 250px;
+    padding: -5%;
+    // padding-top: 3vh;
     // margin-right: 20% !important;
 }
 
@@ -207,19 +226,19 @@ h1, .title, .paragraph{
 }
 
 
-
-.footerBottom{
-    height: 10vh;
-}
+// .footerBottom{
+//     height: 10vh;
+//     background: blue;
+// }
 
 .buyNow{
-    margin: 0 auto;
+    // margin: 0 auto;
     color: #FFF;
     cursor: pointer;
-    display: block;
-    text-align: center;
+    // display: block;
+    // text-align: center;
     opacity: 0.75;
-    padding-top: 3vh;
+    // padding-top: 3vh;
     &:hover{
         opacity: 1;
     }
@@ -227,10 +246,11 @@ h1, .title, .paragraph{
 
 .rights{
     color: #FFF;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-    padding-top: 3vh;
+    float: right
+    // margin: 0 auto;
+    // display: block;
+    // text-align: center;
+    // padding-top: 3vh;
 }
 
 

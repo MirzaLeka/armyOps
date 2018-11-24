@@ -140,16 +140,29 @@ body {
 
 .footer {
   width: 100%;
-  background: #1d252d; }
+  background: #1d252d;
+  height: 20vh; }
 
-.footerTop {
-  height: 10vh; }
+.footerLeft {
+  width: 50%;
+  float: left;
+  height: 20vh;
+  border-right: 2px solid #13181d;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center; }
 
-.footerMiddle {
-  width: 480px;
-  margin: 0 auto;
-  display: block;
-  text-align: center; }
+.footerRight {
+  width: 50%;
+  float: right;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center; }
 
 .getInTouchUl {
   width: 300px;
@@ -159,9 +172,7 @@ body {
 
 .buyNow {
   float: right;
-  width: 150px;
-  padding: 0;
-  padding-top: 3vh; }
+  padding: -5%; }
 
 .getInTouchList {
   color: #FFF;
@@ -172,26 +183,16 @@ body {
   .getInTouchList:hover {
     opacity: 1; }
 
-.footerBottom {
-  height: 10vh; }
-
 .buyNow {
-  margin: 0 auto;
   color: #FFF;
   cursor: pointer;
-  display: block;
-  text-align: center;
-  opacity: 0.75;
-  padding-top: 3vh; }
+  opacity: 0.75; }
   .buyNow:hover {
     opacity: 1; }
 
 .rights {
   color: #FFF;
-  margin: 0 auto;
-  display: block;
-  text-align: center;
-  padding-top: 3vh; }
+  float: right; }
 
 .modal {
   display: none;
