@@ -50,6 +50,7 @@ body {
   width: 100%; }
 
 .title {
+  color: #1d252d;
   text-transform: uppercase;
   margin: 20px auto; }
 
@@ -132,6 +133,40 @@ body {
   opacity: 0.85; }
   .mediaItems:hover {
     opacity: 1; }
+
+.newsFeed {
+  height: 100vh; }
+
+.tweets {
+  float: left;
+  width: 25%;
+  height: 100vh;
+  overflow-y: auto; }
+
+.pageLogo {
+  float: left;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  position: relative; }
+
+#upToDate {
+  position: absolute;
+  top: 3%; }
+
+#logo {
+  height: 200px;
+  width: 200px; }
+
+.facebook {
+  float: right;
+  width: 25%;
+  height: 100vh;
+  overflow-y: auto; }
 
 .embededPosts {
   height: 72vh;
