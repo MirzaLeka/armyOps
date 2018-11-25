@@ -3,7 +3,7 @@ window.onload = () => {
 
 document.querySelector(".rights").textContent = `Copyright © 2013 - ${new Date().getFullYear()} Polygon Art`;
 
-getMedia();
+// getMedia();
 
 }
 
