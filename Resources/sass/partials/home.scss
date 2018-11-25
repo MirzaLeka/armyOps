@@ -130,11 +130,12 @@ h1, .title, .paragraph{
 
 .media{
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 5px;
+    // display: grid;
+    // grid-template-columns: repeat(5, 1fr);
+    // grid-gap: 5px;
     background: $darkBlue;
-    border-bottom: 5px solid $darkBlue;
+    // border-bottom: 5px solid $darkBlue;
+    width: 100%;
 }
 
 .mediaItems{
@@ -393,7 +394,6 @@ h1, .title, .paragraph{
     padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
 .columns {
     -ms-flex: 25%; /* IE10 */
     flex: 25%;
@@ -401,12 +401,11 @@ h1, .title, .paragraph{
     padding: 0 4px;
 }
 
-.column img {
-    margin-top: 8px;
+.columns img {
+    margin-top: 8px !important;
     vertical-align: middle;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
     .columns {
         -ms-flex: 50%;
@@ -415,7 +414,6 @@ h1, .title, .paragraph{
     }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .columns {
         -ms-flex: 100%;
