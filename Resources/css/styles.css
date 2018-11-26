@@ -140,6 +140,19 @@ body {
   height: 100vh;
   overflow-y: auto; }
 
+/* SCROLL */
+.tweets::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5; }
+
+.tweets::-webkit-scrollbar {
+  width: 15px;
+  background-color: #F5F5F5; }
+
+.tweets::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #1d252d; }
+
 .pageLogo {
   float: left;
   width: 50%;
@@ -202,10 +215,6 @@ body {
   padding: 0;
   padding-top: 3vh; }
 
-.buyNow {
-  float: right;
-  padding: -5%; }
-
 .getInTouchList {
   color: #FFF;
   opacity: 0.75;
@@ -216,9 +225,12 @@ body {
     opacity: 1; }
 
 .buyNow {
+  margin-top: 0;
+  float: right;
   color: #FFF;
   cursor: pointer;
-  opacity: 0.75; }
+  opacity: 0.75;
+  position: relative; }
   .buyNow:hover {
     opacity: 1; }
 
