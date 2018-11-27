@@ -3,9 +3,10 @@ window.onload = () => {
 
 document.querySelector(".rights").textContent = `Copyright © 2013 - ${new Date().getFullYear()} Polygon Art`;
 
-// getMedia();
-
+console.log(imgGrid);
 }
+
+
 
 const items = [
     "../Resources/img/media/1.png",
@@ -26,13 +27,6 @@ const items = [
     "../Resources/img/media/14.jpg",
     "../Resources/img/media/15.png",
 ]
-
-function getMedia() {
-
-const images = items.map((item, i) => `<img src="${item}" onclick="openModal(${i})" class='mediaItems'/>`).join('');
-document.querySelector('.media').innerHTML = images;
-
-}
 
 
 
@@ -91,3 +85,11 @@ function prevImg() {
         modal.style.display = "none";    
       }
   }
+
+
+  // open gallery
+  
+var imgGrid = [...document.querySelectorAll('.imgGrid')];
+
+imgGrid.map((item, i) => item.addEventListener('click', () => openModal(i) ));
+
