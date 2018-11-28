@@ -120,7 +120,38 @@ body {
   background: #1d252d;
   width: 100%; }
 
-.mediaItems {
+#exploreImg {
+  width: 100%;
+  height: 300px;
+  border: 2px solid #FFF; }
+
+#exploreContent {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center; }
+
+#exploreDesc {
+  color: #FFF;
+  margin-bottom: 20px; }
+
+#exploreBtn {
+  border: none;
+  border-radius: 10px;
+  background: #FFF;
+  color: #1d252d;
+  font-weight: bold;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  opacity: 0.75; }
+  #exploreBtn:hover {
+    opacity: 1; }
+
+.imgGrid {
   margin: 0;
   height: 200px;
   width: 100%;
@@ -128,16 +159,16 @@ body {
   border-right: none;
   cursor: pointer;
   opacity: 0.85; }
-  .mediaItems:hover {
+  .imgGrid:hover {
     opacity: 1; }
 
 .newsFeed {
-  height: 100vh; }
+  height: 110vh; }
 
 .tweets {
   float: left;
   width: 25%;
-  height: 100vh;
+  height: 110vh;
   overflow-y: auto; }
 
 /* SCROLL */
