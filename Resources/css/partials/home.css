@@ -46,7 +46,8 @@ body {
 
 .featuresContainer {
   position: relative;
-  background: linear-gradient(to top, #1d252d 0%, #1d252d 55%, rgba(29, 37, 45, 0.25) 90%, rgba(29, 37, 45, 0) 100%);
+  background: linear-gradient(to top, #1d252d 0%, #1d252d 50%, rgba(29, 37, 45, 0.25) 90%, rgba(29, 37, 45, 0) 100%);
+  background-size: 100%;
   width: 100%; }
 
 .title {
@@ -60,7 +61,7 @@ body {
 
 #videoPlayer {
   width: 100%;
-  height: 470px;
+  height: 400px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -82,9 +83,6 @@ body {
 #trailer {
   color: #FFF;
   font-size: 18px; }
-
-.featuresRow {
-  margin-top: 50px; }
 
 .featuresDiv {
   padding: 0;
@@ -116,7 +114,9 @@ body {
   width: 100%; }
 
 .media {
-  position: relative;
+  margin-top: -5px !important;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background: #1d252d;
   width: 100%; }
 
