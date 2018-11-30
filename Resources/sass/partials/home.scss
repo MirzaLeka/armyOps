@@ -21,28 +21,43 @@ h1, .title, .paragraph{
     @extend %text-centered;
 }
 
-.pauseAndFeatures{
-    position: relative;
-}
+// .pauseAndFeatures{
+//     position: relative;
+// }
 
-.pause{
-    @include background();
-    height: 65vh;
-    position: absolute;
-}
+// .pause{
+//     @include background();
+//     height: 65vh;
+//     position: absolute;
+// }
 
 .featuresContainer{
     position: relative;
-    background: linear-gradient(
-        to top, 
-        rgba(29,37,45,1) 0%,
-        rgba(29,37,45,1) 50%,
-        rgba(29,37,45,0.25) 90%,
-        rgba(29,37,45,0) 100%
-     );
-     background-size: 100%;
+    // background: linear-gradient(
+    //     to top, 
+    //     rgba(29,37,45,1) 0%,
+    //     rgba(29,37,45,1) 50%,
+    //     rgba(29,37,45,0.25) 90%,
+    //     rgba(29,37,45,0) 100%
+    //  );
+    //  background-size: 100%;
+    background: $darkBlue;
      width: 100%;
+    padding-bottom: 200px;
     }
+
+    #pauseDiv, #pauseImg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 450px;
+        }
+        #pauseImg {
+     -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+     mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+    }
+    
 
 .title{
     color: $darkBlue;
@@ -58,9 +73,18 @@ h1, .title, .paragraph{
 
 #videoPlayer{
     width: 100%;
-    height: 400px;
+    height: 450px;
     // border: 4px solid white;
     @include flex();
+    position: relative;
+}
+
+#videoContent{
+    cursor: pointer;
+}
+
+#videoContent:hover #playBtn, #videoContent:hover #trailer{
+    opacity: 1;
 }
 
 #playBtn{
@@ -73,17 +97,13 @@ h1, .title, .paragraph{
     font-size: 30px;
     height: 60px;
     width: 60px;
-    cursor: pointer;
     opacity: 0.75;
-    
-    &:hover{
-        opacity: 1;
-    }
 }
 
 #trailer{
     color: #FFF;
     font-size: 18px;
+    opacity: 0.75;
 }
 
 .featuresRow{
@@ -136,11 +156,7 @@ h1, .title, .paragraph{
 
 
 .media{
-    margin-top: -5px !important;
-    padding-top: 170px;
-    padding-bottom: 200px;
-    background: $darkBlue;
-    width: 100%;
+ margin-top: 170px !important;
 }
 
 #mediaImg{
