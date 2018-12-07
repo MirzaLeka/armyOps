@@ -6,6 +6,32 @@ document.querySelector(".rights").textContent = `Copyright © 2013 - ${new Date(
 console.log(imgGrid);
 }
 
+let ifVideo = false;
+
+document.querySelector('#playBtn').addEventListener('click', function() {
+    document.querySelector('#videoPlayer').innerHTML = `<video width="768" height="450" controls autoplay>
+    <source src="https://scontent-yyz1-1.xx.fbcdn.net/v/t66.18014-6/10000000_2303651236353034_5676491614531001921_n.mp4?_nc_cat=104&efg=eyJ2ZW5jb2RlX3RhZyI6Im9lcF9oZCJ9&_nc_ht=scontent-yyz1-1.xx&oh=92b4bd0893af3e35b194993ac72a5664&oe=5CA57469" type="video/mp4">
+  </video>`;
+ifVideo = true;
+});
+
+
+    // document.querySelector(".header").addEventListener('click', function() {
+
+    //     if (ifVideo) {
+
+    //         document.querySelector('#videoPlayer').innerHTML =`<div id="videoPlayer"> 
+    //         <div id="videoContent">
+    //             <i id="playBtn" class="fa fa-play" aria-hidden="true"></i>
+    //             <br> <br>
+    //             <p id="trailer">REVEAL TRAILER</p>
+    //         </div>
+    //     </div>`;
+    //     ifVideo = false;
+
+    //     }
+
+    //   });
 
 
 const items = [
